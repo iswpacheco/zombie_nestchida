@@ -1,0 +1,25 @@
+<% include _header %>
+
+<h1>Registro</h1>
+
+<form action="/equip" method="post">
+<div class="form-group">
+    <input name="description" type="text" class="form-control"
+    placeholder="Descripcion del equipo" required autofocus/>
+</div>
+<div class="form-group">
+    <input name="defense" type="int" class="form-control"
+    placeholder="Cantidad de defensa que porta" required/>
+</div>
+<div class="form-group">
+    <input name="category" type="text" class="form-control"
+    placeholder="Categoria del zombie" required/>
+</div>
+<div class="form-group">
+    <input name="weight" type="int" class="form-control"
+    placeholder="Tamaño del zombie" required/>
+</div>
+<input type="submit" value="Registrarse" class="btn btn-primary btn-block"/>
+</form>
+
+<% include _footer %>

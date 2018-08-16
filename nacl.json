@@ -1,0 +1,99 @@
+[{
+        "group": "invitado",
+        "permissions": [{
+                "resource": "/login",
+                "methods": ["GET", "POST"],
+                "action": "allow"
+            },
+            {
+                "resource": "/edit",
+                "methods": ["GET", "POST"],
+                "action": "allow"
+            },
+            {
+                "resource": "/logout",
+                "methods": ["GET", "POST"],
+                "action": "allow"
+            },
+            {
+                "resource": "/signup",
+                "methods": ["GET", "POST"],
+                "action": "allow"
+            }
+        ]
+
+    },
+    {
+        "group": "Zombie-King",
+        "permissions": [{
+            "resource": "/*",
+            "methods": ["GET", "POST"],
+            "action": "allow"
+        }]
+    },
+    {
+        "group": "Zombie-Queen",
+        "permissions": [{
+                "resource": "/login",
+                "methods": ["GET", "POST"],
+                "action": "allow"
+            },
+            {
+                "resource": "/equipment",
+                "methods": ["GET"],
+                "action": "allow"
+            },
+            {
+                "resource": "/logout",
+                "methods": ["GET", "POST"],
+                "action": "allow"
+            },
+            {
+                "resource": "/zombies/*",
+                "methods": ["GET"],
+                "action": "allow"
+            },
+            {
+                "resource": "signup",
+                "methods": ["GET"],
+                "action": "allow"
+            },
+            {
+                "resource": "edit",
+                "methods": ["GET"],
+                "action": "allow"
+            }
+        ]
+
+
+    },
+    {
+        "group": "Zombie-Boss",
+        "permissions": [{
+                "resource": "/equipment",
+                "methods": ["GET", "POST"],
+                "action": "allow"
+            },
+            {
+                "resource": "/equip",
+                "methods": ["GET", "POST"],
+                "action": "allow"
+            },
+            {
+                "resource": "/logout",
+                "methods": ["GET", "POST"],
+                "action": "allow"
+            },
+            {
+                "resource": "/login",
+                "methods": ["GET", "POST"],
+                "action": "allow"
+            },
+            {
+                "resource": "/signup",
+                "methods": ["GET", "POST"],
+                "action": "allow"
+            }
+        ]
+    }
+]
